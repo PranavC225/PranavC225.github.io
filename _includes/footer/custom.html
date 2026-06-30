@@ -3,4 +3,23 @@
 <!-- Support for MathJax -->
 <script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js"></script>
 
+<!-- Support for Mermaid diagrams -->
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: false });
+
+  // kramdown + rouge wrap ```mermaid fences as nested
+  // <div class="language-mermaid"><div class="highlight"><pre><code>...</code></pre></div></div>,
+  // so pull the raw source out before handing it to mermaid.
+  document.querySelectorAll('.language-mermaid').forEach((block) => {
+    const source = block.textContent;
+    const target = document.createElement('div');
+    target.className = 'mermaid';
+    target.textContent = source;
+    block.replaceWith(target);
+  });
+
+  mermaid.run({ querySelector: '.mermaid' });
+</script>
+
 <!-- end custom footer snippets -->

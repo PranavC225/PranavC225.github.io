@@ -21,3 +21,6 @@ package-lock.json
 
 # Ignore files created by MacOS
 .DS_Store
+
+# Local-only Claude Code instructions, not for the public repo
+CLAUDE.md
