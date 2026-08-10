@@ -26,5 +26,9 @@ I'm looking for ML Engineer / AI Engineer / Data Scientist roles in Stockholm, S
 Featured projects
 ======
 - **[early-companion](/portfolio/early-companion/)** — Multi-agent RAG Telegram bot for international students at LiU, routing through a LangGraph state machine to domain-specific RAG agents over Qdrant.
-- **[family_tasks](/portfolio/family-tasks/)** — Full-stack shared to-do app deployed on Google Cloud Run, with FastAPI + HTMX, SQLModel, Google OAuth, and $0 Web Push notifications.
 - **[RAG ablation study](/portfolio/rag-ablation/)** — Research harness comparing RAG chunking/retrieval variants for LiU housing Q&A, scored with BERTScore and ROUGE.
+
+Side projects
+======
+- **[family_tasks](/portfolio/family-tasks/)** — Full-stack shared to-do app deployed on Google Cloud Run, with FastAPI + HTMX, SQLModel, Google OAuth, and $0 Web Push notifications.
+- **[Marvel Universe Movie List](/portfolio/marvel-universe-movie-list/)** — Interactive MCU watch-order guide (React + TypeScript), with a release-order ↔ chronological toggle and a watch-path generator, deployed to Cloud Run.
