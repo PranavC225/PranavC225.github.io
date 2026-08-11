@@ -28,17 +28,17 @@ author:
   pronouns         : # example: "she/her"
   bio              : "ML / AI Engineer · MSc Statistics & ML, LiU"
   location         : "Stockholm, Sweden"
-  employer         : # URL — left blank, currently job-searching
+  employer         : Linkoping University
   uri              : # URL
   email            : "pranav.chandode@gmail.com"
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  # googlescholar  : # TODO: create at https://scholar.google.com/ — sign in with your academic/Google account, click "My profile", add the ACIA-2022 paper, then paste the profile URL here.
+  googlescholar  : https://scholar.google.com/citations?user=f1a2aNcAAAAJ&hl=en
   inspire-hep      : # URL
   impactstory      : # URL
-  # orcid          : # TODO: create a free researcher ID at https://orcid.org/register, then paste the profile URL here (e.g. https://orcid.org/0000-0000-0000-0000).
+  orcid          : https://orcid.org/0009-0002-4596-6506
   semantic         : # URL
   ssrn             : # URL
   pubmed           : # URL
