@@ -44,7 +44,11 @@ flowchart LR
 
 ## Results
 
-Four configurations, sweeping chunk size × overlap × retrieval depth, each scored against the same 45-question ground-truth set. Overlap tracks chunk size throughout (500→80, 250→40), so it's folded into the chunk column below:
+Four configurations, sweeping chunk size × overlap × retrieval depth, each scored against the same 45-question ground-truth set. The headline result is an *interaction* — the effect of retrieving more depends entirely on how the corpus was chunked:
+
+![Raising top_k from 5 to 8 raises ROUGE-1 at chunk=250 and lowers it at chunk=500]({{ base_path }}/images/rag-ablation-topk-interaction.svg)
+
+Overlap tracks chunk size throughout (500→80, 250→40), so it's folded into the chunk column below:
 
 | Chunk | top_k | Chunks indexed | ROUGE-1 | ROUGE-2 | ROUGE-L | BERTScore F1 |
 |---|---|---|---|---|---|---|
@@ -55,7 +59,7 @@ Four configurations, sweeping chunk size × overlap × retrieval depth, each sco
 
 **The surprising part: retrieving *more* made it worse.** Holding chunking fixed at 500/80 and raising `top_k` from 5 to 8 dropped every single metric — ROUGE-1 0.4642 → 0.4228, ROUGE-L 0.4129 → 0.3750, BERTScore 0.9088 → 0.9017. That is the one clean single-variable contrast in the sweep, and it cuts against the intuition that giving the model more context can only help. My reading is that the extra chunks dilute the prompt with near-miss passages the 3B model then has to arbitrate between.
 
-At chunk=250 the same `top_k` bump went the other way (ROUGE-1 0.4287 → 0.4475), which hints that the quantity that matters is *total retrieved context* rather than `k` on its own — the two mid-budget configs came out ahead of both extremes on all four metrics. With four configs and one run, I'd treat that as an observation worth testing, not a finding.
+At chunk=250 the same `top_k` bump went the other way (ROUGE-1 0.4287 → 0.4475) — and that reversal is not a one-metric artifact. It holds on all four: ROUGE-2 (+0.0167 vs −0.0183), ROUGE-L (+0.0164 vs −0.0379) and BERTScore (+0.0011 vs −0.0071) each flip sign with chunk size. So `top_k` has no context-independent direction here; what appears to matter is *total retrieved context*, the product of the two knobs rather than either alone. Four configs and one run each still make it a hypothesis rather than a result — but a consistent one, and consistency across four independent metrics is what makes it worth stating at all.
 
 *Caveats, stated plainly: 45 eval questions, a single run per config, one local model (llama3.2:3b), four configurations. The BERTScore spread across all four is 0.007 — small enough that I would not defend the tail of that ranking without more seeds.*
 
