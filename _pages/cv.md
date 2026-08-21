@@ -21,7 +21,7 @@ Education
 
 Experience
 ======
-* **Master's Thesis Researcher, PostNord** (Jan 2026 – Present)
+* **Master's Thesis Researcher, PostNord** (Jan 2026 – Jul 2026)
   * Reframed parcel dwell-time prediction as a survival-analysis problem across a network of ~6,000+ parcel lockers handling ~12M+ annual deliveries.
   * Built an end-to-end modelling pipeline — feature engineering, model benchmarking, and hyperparameter optimization.
   * Evaluated feature importance to support a target of increasing locker utilization from 1.25x to 2.25x, continuing to collaborate with PostNord toward real-time production deployment.
