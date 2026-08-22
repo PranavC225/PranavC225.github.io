@@ -50,7 +50,11 @@ flowchart LR
 
 ## Results
 
-*Demo GIF of a real conversation — coming soon.*
+A real conversation in Telegram — the bot opens with its seven domains, then answers a housing-queue question, a scholarships question and an accommodation question, each routed to the matching domain agent:
+
+![early-companion answering questions about StudentBostäder queue points, LiU scholarships and university accommodation in a Telegram chat]({{ base_path }}/images/early-companion-ss.png)
+
+*A short demo video will replace this once the next round of retrieval improvements lands.*
 
 ## What I learned
 

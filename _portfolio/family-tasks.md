@@ -43,7 +43,13 @@ flowchart LR
 
 ## Results
 
-The live app is OAuth-gated to an email allowlist, so there's no public login to demo. Screenshots/GIF of the task flow are coming soon — see the architecture above for how it's built.
+The live app is OAuth-gated to an email allowlist, so there's no public login to demo. The main task view, running on Cloud Run:
+
+![Family Tasks web app showing the add-task bar with an assignee selector, and two active tasks with complete, repeat and archive actions]({{ base_path }}/images/family-tasks-ss.png)
+
+Each task carries who added it, when, and who it's assigned to. The three actions per row are complete, make recurring, and archive; Active/Done/Archive filter the list, and Notify registers the browser for Web Push.
+
+*A short demo video of the full task flow will replace this once the next round of UI work lands.*
 
 ## What I learned
 
