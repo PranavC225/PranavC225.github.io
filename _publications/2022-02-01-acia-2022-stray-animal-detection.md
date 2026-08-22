@@ -12,6 +12,6 @@ citation: 'Chandode, P., et al. (2022). &quot;Expert System for Detection of Str
 
 Co-authored as a group project. The system targets a safety problem for visually impaired pedestrians: detecting stray animals in real time and surfacing the result through a chest-mounted device with audio feedback.
 
-**Method:** PCA, SIFT, and K-Means clustering for feature extraction and preprocessing, followed by a comparative evaluation of classical ML classifiers — SVM, KNN, Decision Tree, and Random Forest. Random Forest gave the best test accuracy, at 81.61%.
+**Method:** PCA, SIFT, and K-Means clustering for feature extraction and preprocessing, followed by a comparative evaluation of classical ML classifiers: SVM, KNN, Decision Tree, and Random Forest. Random Forest gave the best test accuracy, at 81.61%.
 
 **Deployment:** the final classifier ran on a chest-mounted device, giving audio feedback to the wearer in real time.

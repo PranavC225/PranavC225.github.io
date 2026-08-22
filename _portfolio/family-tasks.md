@@ -1,5 +1,5 @@
 ---
-title: "family_tasks — Shared to-do app on Cloud Run"
+title: "family_tasks: Shared to-do app on Cloud Run"
 excerpt: "Mobile-first, server-rendered FastAPI + HTMX task list with Web Push reminders, deployed scale-to-zero on Google Cloud Run.<br/>"
 collection: portfolio
 ---
@@ -32,14 +32,14 @@ flowchart LR
   GH[push to main] --> CB[Cloud Build trigger] --> CR[Cloud Run · europe-west4 · min-instances=0]
 ```
 
-## Stack — and why
+## Why this stack
 
-- **FastAPI + HTMX** — server-rendered, no SPA build step or client-state overhead.
-- **SQLModel** — a single model layer that swaps databases via one env var.
-- **Google Cloud Run** (europe-west4) — scale-to-zero.
-- **Web Push / VAPID** — push notifications without a Firebase dependency.
-- **Google OAuth** — auth gated to an email allowlist (`auth.py:auth_callback`).
-- **GCP Secret Manager + Cloud Build** — secret storage and push-to-deploy CI/CD.
+- **FastAPI + HTMX:** server-rendered, no SPA build step or client-state overhead.
+- **SQLModel:** a single model layer that swaps databases via one env var.
+- **Google Cloud Run** (europe-west4): scale-to-zero.
+- **Web Push / VAPID:** push notifications without a Firebase dependency.
+- **Google OAuth:** auth gated to an email allowlist (`auth.py:auth_callback`).
+- **GCP Secret Manager + Cloud Build:** secret storage and push-to-deploy CI/CD.
 
 ## Results
 
@@ -53,6 +53,6 @@ Each task carries who added it, when, and who it's assigned to. The three action
 
 ## What I learned
 
-- **Web Push** — implementing VAPID directly instead of reaching for a Firebase/FCM dependency.
-- **DB-agnostic from day one** — putting SQLModel behind `DATABASE_URL` meant SQLite locally and Postgres in prod with zero code change.
-- **Scale-to-zero economics** — `min-instances=0` + Cloud Build trigger gives push-to-deploy at no idle cost.
+- **Web Push:** implementing VAPID directly instead of reaching for a Firebase/FCM dependency.
+- **DB-agnostic from day one:** putting SQLModel behind `DATABASE_URL` meant SQLite locally and Postgres in prod with zero code change.
+- **Scale-to-zero economics:** `min-instances=0` + Cloud Build trigger gives push-to-deploy at no idle cost.

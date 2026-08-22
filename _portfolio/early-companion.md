@@ -1,5 +1,5 @@
 ---
-title: "early-companion — Multi-agent RAG Telegram bot"
+title: "early-companion: Multi-agent RAG Telegram bot"
 excerpt: "LangGraph-routed Telegram bot answering international-student questions at Linköping University over a Qdrant-backed RAG pipeline.<br/>"
 collection: portfolio
 ---
@@ -10,7 +10,7 @@ collection: portfolio
 
 ## Problem
 
-Information for international students at LiU is fragmented across dozens of sources — visa rules, accommodation, finances, scholarships, insurance, arrival logistics. New students don't know where to look or who to ask.
+Information for international students at LiU is fragmented across dozens of sources: visa rules, accommodation, finances, scholarships, insurance, arrival logistics. New students don't know where to look or who to ask.
 
 ## Approach
 
@@ -40,17 +40,17 @@ flowchart LR
 
 **Flow:** `followup` → `guardrail` → `router` → `responder` → END. Off-topic messages short-circuit to `off_topic`; follow-ups bypass the guardrail (`followup_router` → `responder`). Each domain agent extends `agents/base_agent.py` (a shared RAG chain: Qdrant retrieval → prompt → Groq LLM) and is loaded dynamically via `importlib`.
 
-## Stack — and why
+## Why this stack
 
-- **LangGraph** — explicit, stateful routing is easier to reason about and debug than one giant prompt.
-- **Qdrant** (port 6333) — production-grade vector store.
-- **Groq** — fast, free-tier LLM inference.
-- **sentence-transformers** `all-MiniLM-L6-v2` — cheap, local embeddings.
-- **python-telegram-bot** — Telegram interface.
+- **LangGraph:** explicit, stateful routing is easier to reason about and debug than one giant prompt.
+- **Qdrant** (port 6333): production-grade vector store.
+- **Groq:** fast, free-tier LLM inference.
+- **sentence-transformers** `all-MiniLM-L6-v2`: cheap, local embeddings.
+- **python-telegram-bot:** Telegram interface.
 
 ## Results
 
-A real conversation in Telegram — the bot opens with its seven domains, then answers a housing-queue question, a scholarships question and an accommodation question, each routed to the matching domain agent:
+A real conversation in Telegram. The bot opens with its seven domains, then answers a housing-queue question, a scholarships question and an accommodation question, each routed to the matching domain agent:
 
 ![early-companion answering questions about StudentBostäder queue points, LiU scholarships and university accommodation in a Telegram chat]({{ base_path }}/images/early-companion-ss.png)
 
@@ -58,4 +58,4 @@ A real conversation in Telegram — the bot opens with its seven domains, then a
 
 ## What I learned
 
-Why I split the guardrail from the router — gating "is this on-topic?" is a different decision from "which domain?", and separating them made both prompts simpler and more reliable.
+Why I split the guardrail from the router: gating "is this on-topic?" is a different decision from "which domain?", and separating them made both prompts simpler and more reliable.

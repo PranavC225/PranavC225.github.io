@@ -20,7 +20,7 @@ main:
   - title: "CV"
     url: /cv/
 
-  # Disabled for now — re-enable by uncommenting. Each of these collections
+  # Disabled for now; re-enable by uncommenting. Each of these collections
   # (_talks/, _teaching/, _posts/) still has content rendering at its URL;
   # nothing else needs to change for the nav link to come back.
   # - title: "Talks"

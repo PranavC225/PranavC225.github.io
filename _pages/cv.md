@@ -23,13 +23,13 @@ Experience
 ======
 * **Master's Thesis Researcher, PostNord** (Jan 2026 – Jul 2026)
   * Reframed parcel dwell-time prediction as a survival-analysis problem across a network of ~6,000+ parcel lockers handling ~12M+ annual deliveries.
-  * Built an end-to-end modelling pipeline — feature engineering, model benchmarking, and hyperparameter optimization.
+  * Built an end-to-end modelling pipeline: feature engineering, model benchmarking, and hyperparameter optimization.
   * Evaluated feature importance to support a target of increasing locker utilization from 1.25x to 2.25x, continuing to collaborate with PostNord toward real-time production deployment.
 
 * **AI Intern, TCS Sverige AB** (Jul 2025 – Jun 2026)
   * Translated business workflows across 5 departments into 4 Copilot agents automating repetitive tasks, improving cross-functional productivity by an estimated 10%.
   * Co-designed an AI maturity assessment framework across 7 business domains, defining evaluation criteria to identify high-value AI opportunities.
-  * Deployed an AI-assisted SDLC framework, demonstrating AI-driven software engineering workflows for client engagements — including rapid PoC prototyping with Claude Code at TCS Pace Studio.
+  * Deployed an AI-assisted SDLC framework, demonstrating AI-driven software engineering workflows for client engagements, including rapid PoC prototyping with Claude Code at TCS Pace Studio.
   * Built a reusable camera calibration pipeline for vision-guided robotic automation on a robotic arm at TCS Pace Studio (Stockholm).
   * Shipped an internal sales-enablement web app via AI-assisted prototyping, wiring REST APIs to local storage.
 
@@ -40,7 +40,7 @@ Experience
   * Collaborated cross-functionally on continual perception-stack improvements.
 
 * **Computer Vision Intern, PostNord** (Jul 2022 – May 2023)
-  * R&D on correct-parcel-drop detection at PostNord terminals — compared keypoint tracking (MediaPipe), optical flow, and YOLO object detection.
+  * R&D on correct-parcel-drop detection at PostNord terminals: compared keypoint tracking (MediaPipe), optical flow, and YOLO object detection.
   * Built and deployed a background-subtraction solution (90% detection accuracy) as the backbone of a real-time parcel-drop detection pipeline on operational camera feeds.
   * Trained a custom YOLOv8 model for cage detection and implemented GDPR-compliant person-masking on top of distortion correction for reliable tracking.
   * Designed a fisheye-feed orientation-correction method from terminal cameras.
@@ -53,7 +53,7 @@ Skills
 ======
 * **Programming Languages**: Python, R, C++, SQL
 * **Machine Learning**: PyTorch, TensorFlow, scikit-learn, OpenCV, Deep Learning, NLP
-* **LLM & Agentic AI**: LangChain, LangGraph, Retrieval-Augmented Generation (RAG — Naïve, Reranking), Prompt & Context Engineering, MCP
+* **LLM & Agentic AI**: LangChain, LangGraph, Retrieval-Augmented Generation (RAG: Naïve, Reranking), Prompt & Context Engineering, MCP
 * **Cloud & Deployment**: GCP, AWS, Docker, Google Cloud Run
 * **Data**: Pandas, NumPy, PySpark, Vector Databases (Qdrant, ChromaDB)
 * **Web**: FastAPI, Node.js, React, REST APIs
