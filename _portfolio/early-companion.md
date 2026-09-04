@@ -8,6 +8,8 @@ collection: portfolio
 
 **Repo:** [github.com/PranavC225/early-companion](https://github.com/PranavC225/early-companion)
 
+**Live demo:** [early-companion-web-375806194232.europe-west3.run.app](https://early-companion-web-375806194232.europe-west3.run.app/)
+
 ## Problem
 
 Information for international students at LiU is fragmented across dozens of sources: visa rules, accommodation, finances, scholarships, insurance, arrival logistics. New students don't know where to look or who to ask.
@@ -52,9 +54,17 @@ flowchart LR
 
 ## Results
 
+The web UI on first load:
+
+![early-companion web UI landing screen, showing the assistant name and a prompt to ask about accommodation, visa, scholarships, finances, arrival, insurance or travel]({{ base_path }}/images/early-companion-web-ss.png){: .align-center width="600"}
+
+A conversation in the web UI: a visa/insurance financial-requirements question gets an answer with a cited source, then a follow-up outside the indexed sources gets a decline instead of a guess:
+
+![early-companion web UI conversation, answering a financial-requirements question for visa and insurance with a cited source, then declining to answer an out-of-scope question about visa deadlines]({{ base_path }}/images/early-companion-conversation-web-ss.png){: .align-center width="600"}
+
 A real conversation in Telegram. The bot opens with its seven domains, then answers a housing-queue question, a scholarships question and an accommodation question, each routed to the matching domain agent:
 
-![early-companion answering questions about StudentBostäder queue points, LiU scholarships and university accommodation in a Telegram chat]({{ base_path }}/images/early-companion-ss.png)
+![early-companion answering questions about StudentBostäder queue points, LiU scholarships and university accommodation in a Telegram chat]({{ base_path }}/images/early-companion-ss.png){: .align-center width="380"}
 
 ## What I learned
 
