@@ -21,7 +21,7 @@ I'm a Machine Learning / AI engineer. I completed an MSc in Statistics & Machine
 
 Featured projects
 ======
-- **[early-companion](/portfolio/early-companion/)**: multi-agent RAG Telegram bot for international students at LiU, routing through a LangGraph state machine to domain-specific RAG agents over Qdrant.
+- **[early-companion](/portfolio/early-companion/)**: multi-agent RAG assistant for international students at LiU, with hybrid dense+sparse retrieval over Qdrant and a web UI plus Telegram bot sharing one async LangGraph pipeline.
 - **[RAG ablation study](/portfolio/rag-ablation/)**: research harness comparing RAG chunking/retrieval variants for LiU housing Q&A, scored with BERTScore and ROUGE.
 - **[family_tasks](/portfolio/family-tasks/)**: server-rendered FastAPI + HTMX shared task list with Web Push reminders, running scale-to-zero on Google Cloud Run.
 
