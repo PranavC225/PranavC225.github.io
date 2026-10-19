@@ -60,6 +60,10 @@ A real query, "Does creatine improve muscle strength in older adults?", rated St
 
 ![TrustSpan result card for a creatine claim, rated Strong, showing the evidence ladder, study counts and the AI synthesis with citations]({{ base_path }}/images/trustspan-result.png){: .align-center width="600"}
 
+The gate at work: a question that is not about health ("What is the capital of France?") is turned away before any search runs, with example questions to try instead:
+
+![TrustSpan rejecting a non-health question with a prompt to rephrase it around longevity treatments, supplements or health goals]({{ base_path }}/images/trustspan-refusal.png){: .align-center width="600"}
+
 We tested it on six or more live queries during the event. There was no formal evaluation set.
 
 ## What I learned
