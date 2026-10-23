@@ -6,7 +6,7 @@ collection: portfolio
 
 **Stack:** Next.js 14 (App Router, JavaScript) · React 18 · Tailwind · zustand · Canvas 2D · Node `ws` WebSocket server · zod · vitest · Playwright · Docker
 
-**Repo:** [PranavC225/Uniplay-hackathon](https://github.com/PranavC225/Uniplay-hackathon)
+**Repo:** private. The game uses purchased pixel-art packs that cannot be shared publicly, so the screenshots under [Results](#results) show the build instead.
 
 **Live demo:** no longer online. A teammate hosted it for the event, and the site has since been taken down.
 
