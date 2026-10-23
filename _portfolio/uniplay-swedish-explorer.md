@@ -6,12 +6,13 @@ collection: portfolio
 
 **Stack:** Next.js 14 (App Router, JavaScript) · React 18 · Tailwind · zustand · Canvas 2D · Node `ws` WebSocket server · zod · vitest · Playwright · Docker
 
-**Repo:** private team repository
+**Repo:** [PranavC225/Uniplay-hackathon](https://github.com/PranavC225/Uniplay-hackathon)
 
-**Live demo:** no longer online. A teammate hosted it for the event.
+**Live demo:** no longer online. A teammate hosted it for the event, and the site has since been taken down.
 
-**Event:** Uniplay Hackathon, Stockholm, 2026-09-28, one day (8:30 to 20:30), pitched live to the jury. The brief: the game has to teach something, and it has to work on a phone. Team of four.
-<!-- TODO: confirm teammate names and credits before naming them -->
+**Event:** Uniplay Hackathon, Stockholm, 2026-09-28, one day (8:30 to 20:30), pitched live to the jury. The brief: the game has to teach something, and it has to work on a phone.
+
+**Team:** Pranav Chandode, Bhargav Joshi, Artur Burlakin and Niclas Lindhe.
 
 ## Problem
 
