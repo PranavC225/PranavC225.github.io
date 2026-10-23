@@ -25,6 +25,11 @@ Featured projects
 - **[RAG ablation study](/portfolio/rag-ablation/)**: research harness comparing RAG chunking/retrieval variants for LiU housing Q&A, scored with BERTScore and ROUGE.
 - **[family_tasks](/portfolio/family-tasks/)**: server-rendered FastAPI + HTMX shared task list with Web Push reminders, running scale-to-zero on Google Cloud Run.
 
+**Hackathons (2026):**
+- **[TrustSpan](/portfolio/trustspan/)**: rates how deep the evidence behind a longevity claim goes, using deterministic rules over real publications and clinical trials, with an AI summary that explains the rating but never sets it.
+- **[VetClaim Assist](/portfolio/vetclaim-assist/)**: underwriting support for a Folksam pet insurance challenge. The AI reads veterinary records, a rules engine proposes reservations, and a person signs.
+- **[Uniplay Swedish Explorer](/portfolio/uniplay-swedish-explorer/)**: mobile-first browser game for learning everyday Swedish on a Stockholm map. I built the ICA store and the multiplayer quick-chat.
+
 [All projects →](/portfolio/)
 
 **Research interests:** Responsible AI · AI governance and observability · deep learning · computer vision · autonomous driving · robotics
