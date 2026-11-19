@@ -29,6 +29,10 @@ Featured projects
 - **[TrustSpan](/portfolio/trustspan/)**: rates how deep the evidence behind a longevity claim goes, using deterministic rules over real publications and clinical trials, with an AI summary that explains the rating but never sets it.
 - **[VetClaim Assist](/portfolio/vetclaim-assist/)**: underwriting support for a Folksam pet insurance challenge. The AI reads veterinary records, a rules engine proposes reservations, and a person signs.
 - **[Uniplay Swedish Explorer](/portfolio/uniplay-swedish-explorer/)**: mobile-first browser game for learning everyday Swedish on a Stockholm map. I built the ICA store and the multiplayer quick-chat.
+- **[Glass](/portfolio/ahlsell-glass/)**: third place at the Ahlsell and Microsoft AI Blueprint Hackathon. Suggests an Ahlsell article for each tender line, explains the match, and flags the lines a specialist must decide. I led the team.
+
+**Research:**
+- **[SELLMA Swedish routing](/portfolio/sellma-swedish-routing/)**: pre-registered test of whether one rank-1 weight edit can make a small model reply in Swedish to Swedish prompts only, with random-direction controls and confidence intervals. A negative result, reported as one.
 
 [All projects →](/portfolio/)
 
