@@ -6,7 +6,7 @@ collection: portfolio
 
 **Stack:** Next.js 14 (App Router, JavaScript) · React 18 · Tailwind · zustand · Canvas 2D · Node `ws` WebSocket server · zod · vitest · Playwright · Docker
 
-**Repo:** private. The game uses purchased pixel-art packs that cannot be shared publicly, so the screenshots under [Results](#results) show the build instead.
+**Repo:** [github.com/PranavC225/uniplay-swedish-explorer](https://github.com/PranavC225/uniplay-swedish-explorer). This is the public copy of the team repo. The game uses purchased pixel-art packs (ElvGames, unTied Games, Time Fantasy) whose licences do not allow sharing the files, so the art was removed from the code and its history, and the game renders without it until you add your own copies. The screenshots under [Results](#results) show the build with the art.
 
 **Live demo:** no longer online. A teammate hosted it for the event, and the site has since been taken down.
 
@@ -64,9 +64,13 @@ flowchart LR
 
 ## Results
 
-All screenshots are from a phone-sized viewport.
+The game is mobile-first. Most screenshots are from a phone-sized viewport, and the first one is a desktop view.
 
-The opening screen: name your character and pick a hero.
+The opening screen on desktop: name your character and pick a hero.
+
+![The Swedish Explorer character creation screen in a desktop browser, asking for a name and a hero]({{ base_path }}/images/uniplay-desktop.png){: .align-center width="600"}
+
+The same opening screen on a phone.
 
 ![The Swedish Explorer character creation screen on a phone, asking for a name and a hero]({{ base_path }}/images/uniplay-phone.png){: .align-center width="380"}
 
