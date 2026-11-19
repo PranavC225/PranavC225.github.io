@@ -39,7 +39,7 @@ flowchart LR
 - **Retrieve, then judge:** search narrows the catalogue cheaply and the LLM only reads a short list, which keeps the cost per line low and the reasoning checkable.
 - **A rules baseline:** the existing mapping rules gave us something to beat, so the result is a comparison and not a demo.
 - **Disk cache and a budget stop:** repeated evaluation runs stay cheap and reproducible.
-- **Plain JavaScript UI:** three screens (Review, Building 3D, Ask room) with no framework to set up in a hackathon.
+- **Plain JavaScript UI:** three screens (Review, Building 3D, Ask 3D room) with no framework to set up in a hackathon.
 
 ## Results
 
@@ -54,7 +54,7 @@ I scored Glass on 76 gold-labelled lines from four real projects, against a 7,84
 - **Special orders:** Glass flagged 13 of 14 special-order rows (93%) for a human decision instead of forcing a match.
 - **In-catalogue lines:** the top suggestion was right on 47% of them.
 - **Auto-accept:** the lines Glass marks green are 13% of all lines, at 70% precision. This is why a specialist still approves everything.
-- **Model cost:** `gpt-5.4` and `gpt-5.5` both scored 49%, at $0.0141 and $0.0524 per line. The cheaper model was enough.
+- **Model cost:** with the first prompt, `gpt-5.4` and `gpt-5.5` both scored 49%, at $0.0141 and $0.0524 per line. The cheaper model was enough.
 
 Caveats:
 
