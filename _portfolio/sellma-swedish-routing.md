@@ -10,7 +10,7 @@ collection: portfolio
 
 ## Problem
 
-The weight-space programming post reports that small edits to a model's weights can change behaviour a lot: Qwen3.5-0.8B on MATH-500 goes from 7.9% to 48.1% after an edit found with 50 forward passes. The page shows no variance or confidence intervals for the LLM results and no random-direction control. So the evidence cannot separate "this direction matters" from "any edit of this size moves the model".
+The weight-space programming post reports that small edits to a model's weights can change behaviour a lot: Qwen3.5-0.8B on MATH-500 goes from 7.9% to 48.1% after an edit found with 50 forward passes. These are the post's figures, not my measurements. The page shows no variance or confidence intervals for the LLM results and no random-direction control. So the evidence cannot separate "this direction matters" from "any edit of this size moves the model".
 
 I built that control into a small question of my own. Small models often answer in English when asked in another language. Can a rank-1 edit make a small model reply in Swedish when the prompt is Swedish, without making it reply in Swedish to English prompts?
 
