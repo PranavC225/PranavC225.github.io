@@ -46,17 +46,17 @@ flowchart LR
 
 ## Results
 
-Test set, 120 pairs. The `sv-rate` columns show the share of replies classified as Swedish.
+Test set, 120 pairs. The `sv-rate` columns show the share of replies classified as Swedish. The `p` columns are exact McNemar tests of each arm against the base model on the same prompts.
 
-| arm | sv-rate, Swedish prompts | sv-rate, English prompts | degenerate | Swedish perplexity |
-|---|---|---|---|---|
-| base | 1.000 | 0.000 | 0.000 | 17.86 |
-| prompt | 1.000 | 0.900 | 0.008 | 17.86 |
-| W, pre-registered | 0.925 | 0.000 | 0.008 | 26.95 |
-| A, pre-registered | 0.967 | 0.717 | 0.179 | 32.51 |
-| W, dev-tuned | 1.000 | 0.000 | 0.000 | 18.28 |
-| A, dev-tuned | 1.000 | 0.025 | 0.000 | 18.26 |
-| random, 3 seeds | 1.000 | 0.000 | 0.000 | 18.15 to 18.39 |
+| arm | sv-rate, Swedish prompts | sv-rate, English prompts | p vs base, Swedish prompts | p vs base, English prompts | degenerate | Swedish perplexity |
+|---|---|---|---|---|---|---|
+| base | 1.000 | 0.000 | 1 | 1 | 0.000 | 17.86 |
+| prompt | 1.000 | 0.900 | 1 | 6.16e-33 | 0.008 | 17.86 |
+| W, pre-registered | 0.925 | 0.000 | 0.00391 | 1 | 0.008 | 26.95 |
+| A, pre-registered | 0.967 | 0.717 | 0.125 | 2.58e-26 | 0.179 | 32.51 |
+| W, dev-tuned | 1.000 | 0.000 | 1 | 1 | 0.000 | 18.28 |
+| A, dev-tuned | 1.000 | 0.025 | 1 | 0.25 | 0.000 | 18.26 |
+| random, 3 seeds | 1.000 | 0.000 | 1 | 1 | 0.000 | 18.15 to 18.39 |
 
 ![Swedish reply rate by arm on the test set.]({{ base_path }}/images/sellma-fig-test.png){: .align-center width="600"}
 
